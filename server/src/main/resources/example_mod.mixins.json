@@ -6,9 +6,9 @@
 	"mixins": [
 	],
 	"client": [
-		"TitleScreenMixin"
 	],
 	"server": [
+		"MinecraftServerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -7,13 +7,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import com.example.example_mod.ExampleMod;
 
-import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.server.MinecraftServer;
 
-@Mixin(TitleScreen.class)
-public class TitleScreenMixin {
+@Mixin(MinecraftServer.class)
+public class MinecraftServerMixin {
 
-	@Inject(method = "init", at = @At("TAIL"))
-	public void exampleMod$onInit(CallbackInfo ci) {
+	@Inject(method = "main", remap = false, at = @At("HEAD"))
+	public static void exampleMod$onInit(CallbackInfo ci) {
 		ExampleMod.LOGGER.info("This line is printed by an example mod mixin!");
 	}
 }
