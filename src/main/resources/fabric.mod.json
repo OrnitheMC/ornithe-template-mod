@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "example_mod",
+	"version": "${version}",
+	"name": "Example mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://example.com/",
+		"sources": "https://github.com/OrnitheMC/ornithe-template-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/example_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+	},
+	"mixins": [
+		"example_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "1.7.2"
+	}
+}
