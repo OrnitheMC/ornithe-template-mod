@@ -1,0 +1,35 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.example",
+		"id": "example_mod",
+		"version": "${version}",
+		"metadata": {
+			"name": "Example Mod",
+			"description": "This is an example description! Tell everyone what your mod is about!",
+			"contributors": {
+				"Me!": "Owner"
+			},
+			"contact": {
+				"homepage": "https://example.com/",
+				"sources": "https://github.com/OrnitheMC/ornithe-template-mod"
+			},
+			"icon": "assets/example_mod/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.18.3-"
+			},
+			{
+				"id": "minecraft",
+				"versions": "1.2.5"
+			}
+		]
+	},
+	"mixin": "example_mod.mixins.json",
+	"minecraft": {
+		"environment": "${game_environment}"
+	}
+}
