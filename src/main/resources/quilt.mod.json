@@ -17,6 +17,9 @@
 			"icon": "assets/example_mod/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.example.example_mod.ExampleMod"
+		},
 		"depends": [
 			{
 				"id": "quilt_loader",
@@ -25,6 +28,10 @@
 			{
 				"id": "minecraft",
 				"versions": "1.7.2"
+			},
+			{
+				"id": "osl-entrypoints",
+				"versions": ">=0.2.0"
 			}
 		]
 	},
