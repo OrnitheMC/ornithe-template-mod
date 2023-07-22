@@ -15,12 +15,16 @@
 	"icon": "assets/example_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"init": [
+			"com.example.example_mod.ExampleMod"
+		]
 	},
 	"mixins": [
 		"example_mod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "1.7.2"
+		"minecraft": "1.7.2",
+		"osl-entrypoints": ">=0.2.0"
 	}
 }

@@ -29,6 +29,14 @@ dependencies {
 	nests "net.ornithemc:nests:${project.minecraft_version}+build.${project.nests_build}" // remove this line if not using nests
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	modImplementation ploceus.osl('core', project.osl_core_version)
+	modImplementation ploceus.osl('branding', project.osl_branding_version)
+	modImplementation ploceus.osl('config', project.osl_config_version)
+	modImplementation ploceus.osl('entrypoints', project.osl_entrypoints_version)
+	modImplementation ploceus.osl('lifecycle-events', project.osl_lifecycle_events_version)
+	modImplementation ploceus.osl('networking', project.osl_networking_version)
+	modImplementation ploceus.osl('resource-loader', project.osl_resource_loader_version)
 }
 
 processResources {
