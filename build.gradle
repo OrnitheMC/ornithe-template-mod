@@ -34,6 +34,8 @@ def configure(project) {
 		nests "net.ornithemc:nests:${project.rootProject.minecraft_version}-${project.environment}+build.${project.nests_build}" // remove this line if not using nests
 
 		modImplementation "org.quiltmc:quilt-loader:${project.rootProject.loader_version}"
+
+		project.ploceus.dependOsl(project.osl_version, project.environment)
 	}
 
 	project.sourceSets {
