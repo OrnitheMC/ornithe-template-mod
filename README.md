@@ -7,8 +7,15 @@ The official Ornithe template mod. You can use it as a template for your own mod
 In order to use this mod as a template:
 
 1. Create a new repository from this template with `Use this template`
-2. Clone the recently-created repo on your PC
-3. Make the necessary changes in order to make it yours:
+    - Tick the box "Include all branches"
+2. Your repository will contain several branches, each for a different preferred loader and Minecraft version.
+You can select the appropriate branch as the main branch and discard the others.
+    - For Fabric Loader, Minecraft 1.3 and above, use the `fabric/merged` branch.
+    - For Fabric Loader, Minecraft 12w30e and below, use the `fabric/split` branch.
+    - For Quilt Loader, Minecraft 1.3 and above, use the `quilt/merged` branch.
+    - For Quilt Loader, Minecraft 12w30e and below, use the `quilt/split` branch.
+3. Clone the recently-created repo on your PC
+4. Make the necessary changes in order to make it yours:
     - Update `gradle.properties` in order to use your 
         - Update your mod's Maven group and mod ID
             - If you don't know which Maven group to use, and you are planning to host the mod's source code on GitHub, use `io.github.<Your_Username_Here>`
@@ -22,7 +29,7 @@ In order to use this mod as a template:
         - In `quilt.mod.json`, don't forget to put the license's [SPDX identifier](https://spdx.org/licenses/) under the `"license"` property`.
         - The GPLv3 and AGPLv3 are not valid mod licenses, so you can use almost any license except for those.
     - Update the Java sub-directory structure so it reflects your Maven group
-4. The mod is now ready to be worked on!
+5. The mod is now ready to be worked on!
 
 ## License
 
