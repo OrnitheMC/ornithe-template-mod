@@ -30,8 +30,8 @@
 				"versions": "1.2.5"
 			},
 			{
-				"id": "osl",
-				"versions": ">=0.8.0"
+				"id": "osl-entrypoints",
+				"versions": ">=0.4.0"
 			}
 		]
 	},
