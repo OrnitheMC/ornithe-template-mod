@@ -98,6 +98,3 @@ def configure(project) {
 		}
 	}
 }
-
-sourceSets.main.compileClasspath += project(':client').sourceSets.main.compileClasspath
-sourceSets.main.compileClasspath += project(':server').sourceSets.main.compileClasspath
