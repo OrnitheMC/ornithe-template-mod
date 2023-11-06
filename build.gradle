@@ -40,6 +40,9 @@ def configure(project) {
 
 	project.sourceSets {
 		main {
+			java {
+				srcDirs += project.rootProject.sourceSets.main.java.srcDirs
+			}
 			resources {
 				srcDirs += project.rootProject.sourceSets.main.resources.srcDirs
 			}
