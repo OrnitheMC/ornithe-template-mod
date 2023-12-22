@@ -28,15 +28,7 @@ dependencies {
 
 	modImplementation "org.quiltmc:quilt-loader:${project.loader_version}"
 
-	// log4j - uncomment for Minecraft 1.6.4 and below
-//	implementation 'org.apache.logging.log4j:log4j-api:2.19.0'
-//	implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
-	// gson and guava - uncomment for Minecraft 1.5.2 and below
-//	implementation 'com.google.code.gson:gson:2.2.2'
-//	implementation 'com.google.guava:guava:14.0'
-	// fastutil - uncomment for Minecraft 1.11.2 and below
-	implementation 'it.unimi.dsi:fastutil:7.0.12_mojang'
-
+	ploceus.addCommonLibraries();
 	ploceus.dependOsl(project.osl_version)
 }
 
